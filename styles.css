@@ -1,11 +1,11 @@
 @media screen and (max-width: 767px) {
   iframe {
-    height: 50vh;
+    height: 300px;
   }
 }
 
 @media screen and (min-width: 768px) {
   iframe {
-    height: 70vh;
+    height: 700px;
   }
 }
