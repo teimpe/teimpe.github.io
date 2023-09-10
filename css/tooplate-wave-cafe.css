@@ -270,13 +270,15 @@ h2 { margin-top: 0; }
 .tm-form-control::placeholder { color: white; }
 
 .tm-btn-primary {
-    color: #099;
-    background-color: white;
-    border: 0;
-    padding: 12px 40px;
-    font-size: 1.4rem;
-    cursor: pointer;
-    transition: all 0.3s ease; 
+
+  background-color: #ff5722; /* Change the background color to your preferred color */
+  color: #fff; /* Change the text color to your preferred color */
+  padding: 10px 20px; /* Adjust padding as needed */
+  border: none;
+  border-radius: 20px; /* Adjust the border-radius to control the roundness of the button */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
+
 }
 
 .tm-btn-primary:hover {
