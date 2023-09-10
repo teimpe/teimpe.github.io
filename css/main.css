@@ -46,7 +46,10 @@ h2 { margin-top: 0; }
 }
 
 .tm-video-wrapper { position: relative; }
-.tm-image-wrapper { position: relative; }
+.tm-image-wrapper {
+    background-size: 100% 100%;
+    position: center;
+}
 
 #tm-video-control-button {
     cursor: pointer;
