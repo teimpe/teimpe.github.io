@@ -110,6 +110,11 @@ h2 { margin-top: 0; }
     text-decoration: none;
     align-items: center;      
     font-size: 1.2rem;
+    border: none;
+    border-radius: 20px; /* Adjust the border-radius to control the roundness of the button */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
+
 }
 
 .tm-page-link:hover,
