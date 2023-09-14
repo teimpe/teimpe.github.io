@@ -131,8 +131,13 @@ h2 { margin-top: 0; }
     font-size: 1.5rem;
 }
 
-.tm-black-bg {
+.tm-white-bg {
     background-color: rgba(153,79,57,0.1);
+    color: #994639;
+}
+
+.tm-black-bg {
+    background-color: rgba(153,79,57);
     color: #994639;
 }
 
