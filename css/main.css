@@ -103,6 +103,17 @@ h2 { margin-top: 0; }
 
 .tm-page-nav-item { margin-top: 20px; }
 
+.tm-toggle {
+  background-color: #F7F6F5; /* Change the background color */
+  color: #994639; /* Change the text color */
+  border: 2px solid #994639;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
 .tm-page-link {
     min-width: 240px;
     height: 100px;
@@ -120,7 +131,8 @@ h2 { margin-top: 0; }
 }
 
 .tm-page-link:hover,
-.tm-page-link.active {
+.tm-page-link.active,
+.tm-toggle:hover {
     background-color: #994639;
     color: white;
 }
