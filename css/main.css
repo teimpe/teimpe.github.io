@@ -156,11 +156,23 @@ h2 { margin-top: 0; }
 .tm-drinks-nav > ul > li { display: inline-block; }
 
 .tm-drinks-nav > ul > li > a {
-    color: #994639;
     font-size: 1.2rem;
     padding-top: 15px;
     padding-bottom: 5px;
     border-bottom: 3px solid transparent;
+}
+
+.tm-hot-drinks-nav {
+    color: #D0104C;
+}
+
+.blinking {
+    animation: blink 1s infinite; /* Use the "blink" animation, repeat it infinitely every 1 second */
+}
+
+/* Pause the animation when hovering over the text */
+.blinking:hover {
+animation: none; /* Remove the animation on hover */
 }
 
 .tm-drinks-nav { height: 80px; }
@@ -177,6 +189,8 @@ h2 { margin-top: 0; }
 .tm-drinks-nav > ul > li a:hover {
     color: #994639;
     border-bottom: 4px solid #994639;
+    transition: none;
+    animation: none; /* Remove the animation on hover */
 }
 
 .tm-list-item {
@@ -242,6 +256,13 @@ h2 { margin-top: 0; }
     from { opacity: 0.3; }
     to { opacity: 1; }
 }
+
+@keyframes blink {
+    0% { opacity: 1; } /* Start with full opacity */
+    50% { opacity: 0; } /* Blink to completely transparent at 50% of the animation */
+    100% { opacity: 1; } /* Return to full opacity at the end */
+}
+
 
 /* About */
 .tm-about-box-1 { padding: 40px 30px 50px 0; }
