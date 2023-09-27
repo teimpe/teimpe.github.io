@@ -193,6 +193,9 @@ animation: none; /* Remove the animation on hover */
     animation: none; /* Remove the animation on hover */
 }
 
+
+
+
 .tm-list-item {
     display: flex;
     align-items: center;
@@ -206,18 +209,45 @@ animation: none; /* Remove the animation on hover */
     margin-right: 20px;
     width: 160px;
     height: 160px;
+    object-fit: cover;
+    background-color: #994639;
+}
+
+.tm-landscape-img {
+    margin-right: 20px;
+    width: 660px;
+    height: 298px;
+    object-fit: cover;
     background-color: #994639;
 }
 
 .tm-list-item-img-big {
-    margin-right: 25px;
+    margin-right: 20px;
     width: 200px;
     height: 200px;
+}
+.tm-list-item-img-vertical{
+    margin-right: 25px;
+    width: 200px;
+    height: 444px;
+}
+.tm-list-item-img-vertical_2{
+    margin-right: 25px;
+    width: 150px;
+    height: 280px;
+}
+
+
+.tm-list-item-img-horizontal{
+    margin-right: 25px;
+    width: 320px;
+    height: 150px;
 }
 
 .tm-list-item-text {
     padding: 20px 25px;
     flex: 1;
+    color: #994639;
 }
 
 .tm-list-item-text-2 { flex: 1; }
@@ -372,6 +402,8 @@ animation: none; /* Remove the animation on hover */
     .tm-about-header { margin-left: 180px; }
 }
 
+
+
 @media (max-width: 500px) {
     .tm-about-header { margin-left: 0; }
     .tm-list-item-2 { flex-direction: column; }
@@ -396,7 +428,7 @@ animation: none; /* Remove the animation on hover */
 
     .tm-list-item-img {
         margin-right: 0;
-        margin-bottom: 15px;        
+        margin-bottom: 15px;
     }
 
     .tm-drinks-nav { height: auto; }
