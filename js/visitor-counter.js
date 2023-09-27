@@ -1,14 +1,15 @@
-// Check if the visitorCount key exists in local storage
-if (localStorage.getItem('visitorCount') === null) {
-    // If it doesn't exist, initialize it to 0
-    localStorage.setItem('visitorCount', '0');
-}
+        // Function to increment and display the visitor count
+        function incrementVisitorCount() {
+            // Send an AJAX request to the server to log the visitor's IP address
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'log-visitor.php', true);
+            xhr.send();
 
-// Get the current visitor count from local storage
-const currentVisitorCount = parseInt(localStorage.getItem('visitorCount'));
+            // Increment and display the visitor count
+            var visitorCountElement = document.getElementById('visitorCount');
+            var currentCount = parseInt(visitorCountElement.textContent);
+            visitorCountElement.textContent = currentCount + 1;
+        }
 
-// Update the HTML element with the visitor count
-document.getElementById('visitorCount').textContent = currentVisitorCount;
-
-// Increment the visitor count and update local storage when the page loads
-localStorage.setItem('visitorCount', (currentVisitorCount + 1).toString());
+        // Call the incrementVisitorCount function when the page loads
+        window.onload = incrementVisitorCount;
